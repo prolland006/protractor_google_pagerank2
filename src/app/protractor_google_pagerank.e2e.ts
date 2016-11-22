@@ -59,6 +59,9 @@ function findInPage(linkToFind:string, page: number) :any {
 describe('pagerank on google tks to protractor', () => {
 
   fit('search link on google', (done) => {
+
+    console.log(`keywords=${browser.params.keywords}`);
+
     browser.get('https://www.google.fr/');
     browser.waitForAngular();
 
